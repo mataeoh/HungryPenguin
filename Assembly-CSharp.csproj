@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{2BB3BECF-CEFE-4797-6D12-B668C61F108B}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_3;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/Engine/Unity/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/Engine/Unity/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Scripts\CS_BlockMgr.cs" />
+     <Compile Include="Assets\Scripts\CS_Camera.cs" />
+     <Compile Include="Assets\Scripts\CS_DebugPrint.cs" />
+     <Compile Include="Assets\Scripts\CS_Eagle.cs" />
+     <Compile Include="Assets\Scripts\CS_EggMgr.cs" />
+     <Compile Include="Assets\Scripts\CS_Fish.cs" />
+     <Compile Include="Assets\Scripts\CS_FishMgr.cs" />
+     <Compile Include="Assets\Scripts\CS_Flicker.cs" />
+     <Compile Include="Assets\Scripts\CS_FruitMgr.cs" />
+     <Compile Include="Assets\Scripts\CS_MainThread.cs" />
+     <Compile Include="Assets\Scripts\CS_ParticleMgr.cs" />
+     <Compile Include="Assets\Scripts\CS_Player.cs" />
+     <Compile Include="Assets\Scripts\CS_Shark.cs" />
+     <Compile Include="Assets\Scripts\CS_SoundMgr.cs" />
+     <Compile Include="Assets\Scripts\Mics\Advertisement\AdvertisementHandler.cs" />
+     <Compile Include="Assets\Scripts\Mics\Advertisement\AdvertisementManager.cs" />
+     <None Include="Assets\Shader\DefaultResources\Internal-Halo.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Flare.shader" />
+     <None Include="Assets\Shader\CGIncludes\Lighting.cginc" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-Diffuse.shader" />
+     <None Include="Assets\Shader\DefaultResources\Internal-Flare.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Alpha-Parallax.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-Bumped.shader" />
+     <None Include="Assets\Shader\DefaultResources\Camera-DepthNormalTexture.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Normal-DiffuseDetail.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\AlphaTest-SoftEdgeUnlit.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Reflect-Glossy.shader" />
+     <None Include="Assets\Shader\DefaultResources\Internal-GUITextureBlit.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Reflect-BumpVertexLit.shader" />
+     <None Include="Assets\Shader\Penguin\PostProcess_Gray.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Reflect-Diffuse.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Reflect-VertexLit.shader" />
+     <None Include="Assets\Shader\DefaultResources\Internal-PrePassLighting.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\AlphaTest-Bumped.shader" />
+     <None Include="Assets\Shader\Penguin\PostProcess.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Unlit\Unlit-Normal.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Normal-BumpSpec.shader" />
+     <None Include="Assets\Shader\Penguin\Panning.shader" />
+     <None Include="Assets\Shader\CGIncludes\Tessellation.cginc" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Normal-Glossy.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Alpha-Glossy.shader" />
+     <None Include="Assets\Shader\DefaultResources\Internal-BlitCopy.shader" />
+     <None Include="Assets\Shader\DefaultResources\Internal-PrePassCollectShadows.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Particle Premultiply Blend.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Normal-Diffuse.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-Lightmap-Unlit.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-BumpSpec-1DirectionalLight.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Particle Blend.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Alpha-Bumped.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Skybox.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\AlphaTest-Glossy.shader" />
+     <None Include="Assets\Shader\CGIncludes\UnityCG.cginc" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Particle VertexLit Blended.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Alpha-VertexLit.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\AlphaTest-VertexLit.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Illumin-Bumped.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Normal-VertexLit.shader" />
+     <None Include="Assets\Shader\DefaultResources\Shadow-ScreenBlur.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Normal-DiffuseFast.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Normal-ParallaxSpec.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Lightmap-BumpSpec.shader" />
+     <None Include="Assets\Shader\CGIncludes\TerrainEngine.cginc" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Alpha-ParallaxSpec.shader" />
+     <None Include="Assets\Shader\DefaultResources\Shadow-ScreenBlurRotated.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Particle AddMultiply.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Illumin-Diffuse.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Normal-Bumped.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Particle Alpha Blend.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-BumpSpec.shader" />
+     <None Include="Assets\Shader\DefaultResources\Internal-GUITexture.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Particle Multiply.shader" />
+     <None Include="Assets\Shader\DefaultResources\Sprites-Default.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Unlit\Unlit-Alpha.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-Particle-Add.shader" />
+     <None Include="Assets\Shader\CGIncludes\AutoLight.cginc" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Reflect-BumpSpec.shader" />
+     <None Include="Assets\Shader\Penguin\PlayerShader.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Lightmap-Diffuse.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-Particle-Alpha-VertexLit.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Particle MultiplyDouble.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Normal-Parallax.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Lightmap-Glossy.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Sprites-Diffuse.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Unlit\Unlit-Color.shader" />
+     <None Include="Assets\Shader\CGIncludes\UnityShaderVariables.cginc" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-Particle-Alpha.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Illumin-ParallaxSpec.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Reflect-BumpNolight.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Illumin-Glossy.shader" />
+     <None Include="Assets\Shader\DefaultResources\Internal-Clear.shader" />
+     <None Include="Assets\Shader\DefaultResources\Internal-GUITextureClipText.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Alpha-BumpSpec.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-Skybox.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Decal.shader" />
+     <None Include="Assets\Shader\CGIncludes\HLSLSupport.cginc" />
+     <None Include="Assets\Shader\DefaultResources\Camera-DepthTexture.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Lightmap-Bumped.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Reflect-Bumped.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Lightmap-VertexLit.shader" />
+     <None Include="Assets\Shader\DefaultResources\Internal-CombineDepthNormals.shader" />
+     <None Include="Assets\Shader\DefaultResources\Font.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\skybox cubed.shader" />
+     <None Include="Assets\Shader\DefaultResources\Internal-GUITextureClip.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Illumin-Parallax.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Unlit\Unlit-AlphaTest.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Reflect-ParallaxSpec.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-VertexLit-OnlyDirectionalLights.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\AlphaTest-BumpSpec.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Particle Add.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-VertexLit.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Particle AddSmooth.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Mobile\Mobile-Particle-Multiply.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Alpha-Diffuse.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Illumin-BumpSpec.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Reflect-Parallax.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\Illumin-VertexLit.shader" />
+     <None Include="Assets\Shader\DefaultResourcesExtra\AlphaTest-Diffuse.shader" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
