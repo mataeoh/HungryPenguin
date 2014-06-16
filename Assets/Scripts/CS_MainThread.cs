@@ -33,7 +33,7 @@ public class CS_MainThread : MonoBehaviour {
 	public GameObject Obj_Shark;
 	public GameObject Obj_SoundMgr;
 
-	public AdvertisementManager	m_AdsManager;
+	//public AdvertisementManager	m_AdsManager;
 	public CS_Camera 		m_Camera;
 	public CS_DebugPrint 	m_DebugPrint;
 	public CS_BlockMgr		m_BlockMgr;
@@ -94,8 +94,8 @@ public class CS_MainThread : MonoBehaviour {
 		LoadScore();
 
 		// Get Managers
-		m_AdsManager = AndroidManager.GetComponent<AdvertisementManager>();
-		m_AdsManager.Init();
+		//m_AdsManager = AndroidManager.GetComponent<AdvertisementManager>();
+		//m_AdsManager.Init();
 		m_Camera = Camera.main.GetComponent<CS_Camera>();
 		m_DebugPrint = Obj_DebugPrint.GetComponent<CS_DebugPrint>();
 		m_Player = Obj_Player.GetComponent<CS_Player>();
@@ -183,7 +183,7 @@ public class CS_MainThread : MonoBehaviour {
 		}
 		else if(m_State == eState.Play) {
 			if(bJump) {
-				m_AdsManager.HideAds();
+				//m_AdsManager.HideAds();
 				m_Player.SetJump();
 			}
 		}
@@ -193,7 +193,7 @@ public class CS_MainThread : MonoBehaviour {
 		m_State = state;
 
 		if(m_State == eState.Start) {
-			m_AdsManager.ShowAds();
+			//m_AdsManager.ShowAds();
 			m_SoundMgr.StopSnd_GameOver();
 			m_SoundMgr.PlaySnd_BG();
 		}
@@ -205,7 +205,7 @@ public class CS_MainThread : MonoBehaviour {
 			GUI.Button(new Rect(0, PosY + Height * Index++, Width, Height), "ResetScore");
 		}
 		else if(m_State == eState.Dead) {
-			m_AdsManager.ShowAds();
+			//m_AdsManager.ShowAds();
 			m_SoundMgr.StopSnd_BG();
 			m_SoundMgr.PlaySnd_GameOver();
 			SaveScore();
